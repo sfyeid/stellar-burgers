@@ -1,11 +1,11 @@
 import styles from './ingredients-category.module.css';
 import { forwardRef } from 'react';
-import { TIngredientsCategoryUIProps } from './type';
-import { BurgerIngredient } from '@components';
+import { TIngsCategoryUIProps } from './type';
+import { BurgerIng } from '@components';
 
-export const IngredientsCategoryUI = forwardRef<
+export const IngsCategoryUI = forwardRef<
   HTMLUListElement,
-  TIngredientsCategoryUIProps
+  TIngsCategoryUIProps
 >(({ title, titleRef, ingredients, ingredientsCounters }, ref) => (
   <>
     <h3 className='text text_type_main-medium mt-10 mb-6' ref={titleRef}>
@@ -13,7 +13,7 @@ export const IngredientsCategoryUI = forwardRef<
     </h3>
     <ul className={styles.items} ref={ref}>
       {ingredients.map((ingredient) => (
-        <BurgerIngredient
+        <BurgerIng
           ingredient={ingredient}
           key={ingredient._id}
           count={ingredientsCounters[ingredient._id]}

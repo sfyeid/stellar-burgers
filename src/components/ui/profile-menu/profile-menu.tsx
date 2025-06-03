@@ -5,7 +5,7 @@ import { ProfileMenuUIProps } from './type';
 
 export const ProfileMenuUI: FC<ProfileMenuUIProps> = ({
   pathname,
-  handleLogout
+  handleLogOut
 }) => (
   <>
     <NavLink
@@ -31,7 +31,7 @@ export const ProfileMenuUI: FC<ProfileMenuUIProps> = ({
     </NavLink>
     <button
       className={`text text_type_main-medium text_color_inactive pt-4 pb-4 ${styles.button}`}
-      onClick={handleLogout}
+      onClick={handleLogOut}
     >
       Выход
     </button>
