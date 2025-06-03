@@ -5,7 +5,6 @@ import { IngsCategoryUI } from '../ui/ingredients-category';
 
 export const IngsCategory = forwardRef<HTMLUListElement, TIngsCategoryProps>(
   ({ title, titleRef, ingredients }, ref) => {
-    /** TODO: взять переменную из стора */
     const BurgerConstruct = {
       bun: {
         _id: ''

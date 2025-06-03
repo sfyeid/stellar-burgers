@@ -59,8 +59,6 @@ export const BurgerConstruct: FC = () => {
     [constructorItems]
   );
 
-  // return null;
-
   return (
     <BurgerConstructUI
       price={price}

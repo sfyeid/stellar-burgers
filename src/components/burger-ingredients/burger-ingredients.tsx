@@ -59,8 +59,6 @@ export const BurgerIngs: FC = () => {
       titleSaucesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // return null;
-
   return (
     <BurgerIngsUI
       currentTab={currentTab}
