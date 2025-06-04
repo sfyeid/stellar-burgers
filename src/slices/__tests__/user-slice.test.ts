@@ -50,8 +50,8 @@ const mockedDeleteCookie = jest.requireMock('../../utils/cookie').deleteCookie;
 
 describe('Слайс пользователя', () => {
   const mockUser: TUser = {
-    name: 'User',
-    email: 'user@example.com'
+    name: 'Test User',
+    email: 'test_user@example.com'
   };
 
   const mockApiResponse = {
@@ -116,8 +116,8 @@ describe('Слайс пользователя', () => {
 
         await store.dispatch(
           registerUser({
-            name: 'User',
-            email: 'user@example.com',
+            name: 'Test User',
+            email: 'test_user@example.com',
             password: '12345678'
           })
         );
@@ -172,7 +172,7 @@ describe('Слайс пользователя', () => {
 
         await store.dispatch(
           loginUser({
-            email: 'user@example.com',
+            email: 'test_user@example.com',
             password: '12345678'
           })
         );
@@ -295,8 +295,8 @@ describe('Слайс пользователя', () => {
 
         await store.dispatch(
           updateUser({
-            name: 'User',
-            email: 'user@example.com'
+            name: 'Test User',
+            email: 'test_user@example.com'
           })
         );
 
