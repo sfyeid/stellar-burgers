@@ -1,1 +1,1 @@
-export { OrderStatus } from './order-status';
+export { OrderStat } from './order-status';

@@ -1,16 +1,16 @@
-import { BurgerConstructorUI } from '@ui';
+import { BurgerConstructUI } from '@ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'Example/BurgerConstructor',
-  component: BurgerConstructorUI,
+  title: 'Example/BurgerConstruct',
+  component: BurgerConstructUI,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen'
   }
-} satisfies Meta<typeof BurgerConstructorUI>;
+} satisfies Meta<typeof BurgerConstructUI>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

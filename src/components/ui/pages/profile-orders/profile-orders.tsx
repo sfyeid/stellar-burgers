@@ -3,7 +3,7 @@ import { FC } from 'react';
 import styles from './profile-orders.module.css';
 
 import { ProfileOrdersUIProps } from './type';
-import { ProfileMenu, OrdersList } from '@components';
+import { ProfileMenu, OrderList } from '@components';
 
 export const ProfileOrdersUI: FC<ProfileOrdersUIProps> = ({ orders }) => (
   <main className={`${styles.main}`}>
@@ -11,7 +11,7 @@ export const ProfileOrdersUI: FC<ProfileOrdersUIProps> = ({ orders }) => (
       <ProfileMenu />
     </div>
     <div className={`mt-10 ${styles.orders}`}>
-      <OrdersList orders={orders} />
+      <OrderList orders={orders} />
     </div>
   </main>
 );

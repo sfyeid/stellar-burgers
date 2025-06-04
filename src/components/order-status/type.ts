@@ -1,3 +1,3 @@
-export type OrderStatusProps = {
+export type OrderStatProps = {
   status: string;
 };
